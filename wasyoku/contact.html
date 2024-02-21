@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="和食屋のwebサイトです。">
+    <meta name="robots" content="noindex,nofollow" /><!--このページをインデックス（掲載）しないで！-->
+    <title>和食屋</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__inner header__contact">
+        <div>
+          <a href="index.html" class="header__nav-logo"><img src="img/logo.png" alt="和食屋のロゴです。" class="header__nav-logo-img">和食屋</a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="inside.html" class="container__list-text">店内メニュー</a></li>
+            <li class="header__nav-item"><a href="catered.html" class="container__list-text">仕出し</a></li>
+            <li class="common-button common-button--medium">
+              <a href="contact.html" class="common-button__text"><img src="img/mail.png" alt="メールのマーク" class="mail__img">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <section id="contact">
+        <div class="contact__inner">
+          <div class="contact__form">
+            <h1 class="form__title">お問い合わせ</h1>
+            <div class="form__item">
+              <p class="form__item-label"><span class="form__item-label-required">必須</span>氏名</p>
+              <input type="text" id="fullname" class="form__item-input" placeholder="例）山田太郎">
+            </div>
+            <div class="form__item">
+              <p class="form__item-label"><span class="form__item-label-required">必須</span>電話番号</p>
+              <input type="text" id="phone" class="form__item-input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="form__item">
+              <p class="form__item-label"><span class="form__item-label-required">必須</span>メールアドレス</p>
+              <input type="email" id="email" class="form__item-input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="form__item">
+              <p class="form__item-label">
+                <span class="form__item-label-required label__color">任意</span>住所
+              </p>
+              <input type="text" class="form__item-input" placeholder="例）兵庫県◯◯市◯◯1234-56">
+            </div>
+            <div class="form__item">
+              <p class="form__item-label ismsg"><span class="form__item-label-required">必須</span>お問い合わせ内容</p>
+              <textarea id="message" class="form__item-textarea" placeholder="予約日やお時間などお問い合わせ内容を入力してください。"></textarea>
+            </div>
+            <input type="submit" id="submit" class="form-btn" value="送信する">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer">
+        <div class="footer__inner">
+          <a href="index.html" class="footer-logo"><img src="img/logo.png" alt="和食屋のロゴです。" class="footer-logo__img">和食屋</a>
+          <table class="footer__table">
+            <tr>
+              <th class="footer__th">アクセス</th>
+              <td class="footer__td">〒673-1431兵庫県加東市社30-1</td>
+            </tr>
+            <tr>
+              <th class="footer__th">電話番号</th>
+              <td class="footer__td">0795-42-3558</td>
+            </tr>
+            <tr>
+              <th class="footer__th">定休日</th>
+              <td class="footer__td">月曜日</td>
+            </tr>
+            <tr>
+              <th class="footer__th">営業時間</th>
+              <td class="footer__td">11:00～14:30（L.O.14:00）</td>
+            </tr>
+            <tr>
+              <th class="footer__th"></th>
+              <td class="footer__td">17:00～22:00 (要予約)</td>
+            </tr>
+          </table>
+          <p class="footer__text">※夜の時間は予約のみとなっております。</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <p class="copyright">&copy; 2016 by KENJI FOODSEVICE co,.Ltd All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

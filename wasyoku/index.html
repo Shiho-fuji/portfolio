@@ -7,17 +7,21 @@
     <meta name="robots" content="noindex,nofollow" /><!--このページをインデックス（掲載）しないで！-->
     <title>和食屋</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="" class="nav-text">店内メニュー</a></li>
-            <li class="nav-item"><a href="" class="nav-text">仕出し</a></li>
-            <li class="nav-item button-mail"><a href="" class="nav-text"><img src="img/mail.png" alt="メールのマーク" class="mail-img">お問い合わせ</a></li>
+    <header class="header">
+      <div class="header__inner">
+        <div></div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="inside.html" class="container__list-text">店内メニュー</a></li>
+            <li class="header__nav-item"><a href="catered.html" class="container__list-text">仕出し</a></li>
+            <li class="common-button common-button--medium">
+              <a href="contact.html" class="common-button__text"><img src="img/mail.png" alt="メールのマーク" class="mail__img">お問い合わせ</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -25,37 +29,36 @@
 
     <main>
 
-      <div class="mv">
-        <div class="mv-container">
-          <img src="img/main-shadow.png" alt="メイン画像のシャドウ" class="main-shadow-img">
-          <img src="img/main.png" alt="メイン画像" class="main-img">
-          <div class="header-logo">
-            <a href="#" class="logo-text"><img src="img/logo.png" alt="和食屋のロゴです。" class="logo-img">和食屋</a>
+      <div class="container">
+        <div class="container__inner">
+          <img src="img/top-main.png" alt="メイン画像" class="container__img">
+          <div class="container-logo">
+            <a href="#" class="container-logo__company-name"><img src="img/logo.png" alt="和食屋のロゴです。" class="container-logo__img">和食屋</a>
           </div>
         </div>
       </div>
 
       <section id="commitment">
-        <div class="commitment">
-          <h2 class="commitment-title">こだわり</h2>
+        <div class="intro__inner">
+          <h1 class="intro__title">こだわり</h1>
           <div>
-            <ul class="commitment-gp">
-              <li class="commitment-child">
-                <img src="img/chicken.jpeg" alt="百日鷄の写真" class="commitment-img">
-                <p class="commitment-child-title">播州百日鷄</p>
-                <p class="commitment-text">通常のブロイラーは、約５０日間で育てられるところ、その倍の約１００日間掛けて、自然に近い環境の中で大切に育てられています。肉質は繊維質が細やかで歯ごたえもあり、それでいて口当たりがよく鶏本来のうまみを味わえるのが特徴です。ツウの間では、大人気の地元の特産品『播州百日鶏』を是非ご賞味ください。</p>
+            <ul class="intro__list">
+              <li class="intro__list-item">
+                <img src="img/chicken.jpeg" alt="百日鷄の写真" class="intro__img">
+                <p class="intro__list-title">播州百日鷄</p>
+                <p class="intro__text">通常のブロイラーは、約５０日間で育てられるところ、その倍の約１００日間掛けて、自然に近い環境の中で大切に育てられています。肉質は繊維質が細やかで歯ごたえもあり、それでいて口当たりがよく鶏本来のうまみを味わえるのが特徴です。ツウの間では、大人気の地元の特産品『播州百日鶏』を是非ご賞味ください。</p>
               </li>
-              <li class="commitment-child">
-                <img src="img/cow.jpeg" alt="黒田庄牛の写真" class="commitment-img">
-                <p class="commitment-child-title">黒田庄和牛</p>
-                <p class="commitment-text">数ある和牛産地の中でも5代前のご先祖様までが兵庫県で産まれ育ち、プロの目によって選りすぐられた最高の和牛たちだけに与えられる称号「神戸ビーフ」。その神戸ビーフの主産地である黒田庄町で育ています。そんな『黒田庄和牛』を是非ご賞味ください。</p>
+              <li class="intro__list-item">
+                <img src="img/cow.jpeg" alt="黒田庄牛の写真" class="intro__img">
+                <p class="intro__list-title">黒田庄和牛</p>
+                <p class="intro__text">数ある和牛産地の中でも5代前のご先祖様までが兵庫県で産まれ育ち、プロの目によって選りすぐられた最高の和牛たちだけに与えられる称号「神戸ビーフ」。その神戸ビーフの主産地である黒田庄町で育ています。そんな『黒田庄和牛』を是非ご賞味ください。</p>
               </li>
-              <li class="commitment-child">
-                <img src="img/room.webp" alt="部屋の写真" class="commitment-img">
-                <p class="commitment-child-title">
+              <li class="intro__list-item">
+                <img src="img/room.webp" alt="部屋の写真" class="intro__img">
+                <p class="intro__list-title">
                   快適スペースで
                   <br>おもてなし</p>
-                <p class="commitment-text">60名様まで収容できる大広間や少人数から使える落ち着いた個室、レイアウト自在な解放感のあるゆったり寛げるフロアなどのお部屋があり、「リストご家族でのお集まり、各種お祝い行事や法事など、あらゆる集いの場を料理長自慢のお料理とともにご提供させていただきます。</p>
+                <p class="intro__text">50名様まで収容できる大広間や少人数から使える落ち着いた個室、レイアウト自在な解放感のあるゆったり寛げるフロアなどのお部屋があり、「リストご家族でのお集まり、各種お祝い行事や法事など、あらゆる集いの場を料理長自慢のお料理とともにご提供させていただきます。</p>
               </li>
             </ul>
           </div>
@@ -63,97 +66,111 @@
       </section>
 
       <section id="menu">
-        <div id="inside-menu">
-          <h2 class="inside-title">店内メニュー</h2>
-          <ul class="inside-gp">
-            <li class="inside-child"><img src="img/tamate.jpeg" alt="玉手箱" class="inside-img"></li>
-            <li class="inside-child"><img src="img/wagaya-box.jpeg" alt="和がや弁当" class="inside-img"></li>
-            <li class="inside-child"><img src="img/conger-eel.jpeg" alt="アナゴ一本にぎり" class="inside-img"></li>
-            <li class="inside-child"><img src="img/steak.jpeg" alt="牛ステーキ" class="inside-img"></li>
+        <div class="menu__inner">
+          <h2 class="menu__title">店内メニュー</h2>
+          <ul class="menu__list">
+            <li class="menu__list-item"><img src="img/tamate.jpeg" alt="玉手箱" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/wagaya-box.png" alt="和がや弁当" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/conger-eel.jpeg" alt="アナゴ一本にぎり" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/steak.jpeg" alt="牛ステーキ" class="menu__img"></li>
           </ul>
-          <a class="inside-button">メニュー詳細<img src="img/heckler.png" alt="矢印" class="heckler-img"></a>
+          <a href="inside.html" class="menu__button">メニュー詳細<img src="img/heckler.png" alt="矢印" class="heckler__img"></a>
         </div>
-        <div id="catered-menu">
-          <h2 class="catered-title">仕出し</h2>
-          <ul class="catered-gp">
-            <li class="catered-child"><img src="img/1200box.jpeg" alt="1200円弁当" class="catered-img"></li>
-            <li class="catered-child"><img src="img/kanade-box.jpeg" alt="奏弁当" class="catered-img"></li>
-            <li class="catered-child"><img src="img/chicken-box.jpeg" alt="百日鷄弁当" class="catered-img"></li>
-            <li class="catered-child"><img src="img/sushi-hors-doeuvres.jpeg" alt="寿司オードブル" class="catered-img"></li>
+        <div class="menu__inner">
+          <h2 class="menu__title">仕出し</h2>
+          <ul class="menu__list">
+            <li class="menu__list-item"><img src="img/1200box.jpeg" alt="1200円弁当" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/kanade-box.jpeg" alt="奏弁当" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/chicken-box.jpeg" alt="百日鷄弁当" class="menu__img"></li>
+            <li class="menu__list-item"><img src="img/sushi-hors-doeuvres.jpeg" alt="寿司オードブル" class="menu__img"></li>
           </ul>
-          <p class="catered-text">※仕出しの配達はお電話にてご相談ください。</p>
-          <a class="catered-button">仕出し一覧へ<img src="img/heckler.png" alt="矢印" class="heckler-img"></a>
+          <p class="menu__text">※仕出しの配達はお電話にてご相談ください。</p>
+          <a href="catered.html" class="menu__button">仕出し一覧へ<img src="img/heckler.png" alt="矢印" class="heckler__img"></a>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>店舗案内</h2>
-          <table class="store-information">
-            <tr>
-              <th>アクセス</th>
-              <td>〒673-1431兵庫県加東市社30-1</td>
-            </tr>
-            <tr>
-              <th>電話番号</th>
-              <td>0795-42-3558</td>
-            </tr>
-            <tr>
-              <th>定休日</th>
-              <td>月曜日</td>
-            </tr>
-            <tr>
-              <th>営業時間</th>
-              <td>11:00～14:30（L.O.14:00）</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>17:00～22:00(要予約)</td>
-            </tr>
-          </table>
-          <a><img src="img/tel.png" alt="電話のマーク" class="tel-img">電話</a>
-          <a><img src="img/mail.png" alt="メールのマーク" class="tel-img">お問い合わせ</a>
+      <section id="information">
+        <div class="information">
+          <div class="information__inner">
+            <h2 class="information__title">店舗案内</h2>
+            <p class="information__text">和食屋</p>
+            <table class="information__table">
+              <tr>
+                <th class="information__th">アクセス</th>
+                <td class="information__td">〒673-1431兵庫県加東市社30-1</td>
+              </tr>
+              <tr>
+                <th class="information__th">電話番号</th>
+                <td class="information__td">0795-42-3558</td>
+              </tr>
+              <tr>
+                <th class="information__th">定休日</th>
+                <td class="information__td">月曜日</td>
+              </tr>
+              <tr>
+                <th class="information__th">営業時間</th>
+                <td class="information__td">11:00～14:30（L.O.14:00）</td>
+              </tr>
+              <tr>
+                <th class="information__th"></th>
+                <td class="information__td">17:00～22:00 (要予約)</td>
+              </tr>
+            </table>
+            <div class="information__button">
+              <div class="common-button common-button--small">
+                <a href="" class="common-button__text"><img src="img/tel.png" alt="電話のマーク" class="tel__img">電話</a>
+              </div>
+              <div class="common-button common-button--small">
+                <a href="" class="common-button__text"><img src="img/mail.png" alt="メールのマーク" class="mail__img">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+          <div class="information__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.554772617436!2d134.97011061077234!3d34.917621071430496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35553365340171d3%3A0xc358c640ccfabd43!2z44KE44GX44KN44Gu5ZKM44GM44KE!5e0!3m2!1sja!2sjp!4v1707146565498!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Instagram</h2>
-
+      <section id="instagram">
+        <h2 class="instagram-title">Instagram</h2>
       </section>
 
     </main>
 
-    <footer>
-      <div>
-        <a href="#" class="footer-logo"><img src="img/logo.png" alt="和食屋のロゴです。" class="footer-logo-img">和食屋</a>
-        <table class="store-information">
-          <tr>
-            <th>アクセス</th>
-            <td>〒673-1431兵庫県加東市社30-1</td>
-          </tr>
-          <tr>
-            <th>電話番号</th>
-            <td>0795-42-3558</td>
-          </tr>
-          <tr>
-            <th>定休日</th>
-            <td>月曜日</td>
-          </tr>
-          <tr>
-            <th>営業時間</th>
-            <td>11:00～14:30（L.O.14:00）</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td>17:00～22:00(要予約)</td>
-          </tr>
-        </table>
-      </div>
-      <div>
+    <footer id="footer">
+      <div class="footer">
+        <div class="footer__inner">
+          <a href="#" class="footer-logo"><img src="img/logo.png" alt="和食屋のロゴです。" class="footer-logo__img">和食屋</a>
+          <table class="footer__table">
+            <tr>
+              <th class="footer__th">アクセス</th>
+              <td class="footer__td">〒673-1431兵庫県加東市社30-1</td>
+            </tr>
+            <tr>
+              <th class="footer__th">電話番号</th>
+              <td class="footer__td">0795-42-3558</td>
+            </tr>
+            <tr>
+              <th class="footer__th">定休日</th>
+              <td class="footer__td">月曜日</td>
+            </tr>
+            <tr>
+              <th class="footer__th">営業時間</th>
+              <td class="footer__td">11:00～14:30（L.O.14:00）</td>
+            </tr>
+            <tr>
+              <th class="footer__th"></th>
+              <td class="footer__td">17:00～22:00 (要予約)</td>
+            </tr>
+          </table>
+          <p class="footer__text">※夜の時間は予約のみとなっております。</p>
+        </div>
+        <div>
 
+        </div>
       </div>
+      <p class="copyright">&copy; 2016 by KENJI FOODSEVICE co,.Ltd All Rights Reserved.</p>
     </footer>
-
+    <script src="index.js"></script>
   </body>
-
 </html>
