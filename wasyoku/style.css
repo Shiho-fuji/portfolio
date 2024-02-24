@@ -10,7 +10,19 @@ body{
 }
 .header{
   width: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all .5s;
 }
+
+.header.change-color {
+  background-color: #535145;
+}
+
 .header__inner{
   position: absolute;
   display: flex;
@@ -45,7 +57,7 @@ body{
   display: flex;
 }
 .header__nav-item{
-  padding: 12px 20px;
+  padding: 12px 15px;
 }
 .container__list-text{
   text-decoration:none;
@@ -66,7 +78,8 @@ body{
 .common-button.common-button--large {
   width: 300px;
   height: 50px;
-  margin: auto;
+  margin: 50px auto;
+
 }
 .common-button.common-button--medium {
   width: 180px;
@@ -212,6 +225,7 @@ body{
   width: 850px;
   max-width: 100%;
   margin: 0 auto;
+  padding-bottom: 150px;
 }
 .information{
   display: flex;
@@ -252,15 +266,6 @@ body{
 
 
 
-#instagram{
-  width: 850px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-.instagram-title{
-  text-align: center;
-}
 
 
 
@@ -272,6 +277,8 @@ body{
   max-width: 100%;
   margin: 0 auto;
   padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-logo{
   color: #ffffff;
@@ -303,6 +310,18 @@ body{
   text-align: center;
 }
 
+
+.footer__nav-list{
+  list-style:none;
+}
+.footer__nav-item{
+  padding: 12px 15px;
+}
+.footer__list-text{
+  font-weight: bold;
+  text-decoration:none;
+  color: #ffffff;
+}
 
 
 
@@ -433,6 +452,7 @@ body{
   color: #ffffff;
   padding: 50px 0;
   position: relative;
+  max-width: 100%;
 }
 .diner-other__inner:before {
   position: absolute;
@@ -441,7 +461,6 @@ body{
   bottom: 0;
   margin: 0 calc(50% - 50vw);
   width: 100vw;
-  max-width: 100%;
   background: #535145;
   z-index: -1;
 }
@@ -503,13 +522,14 @@ body{
   text-align: center;
   padding-bottom: 50px;
 }
-.appetizer__list{
+.appetizer__main{
+  max-width: 100%;
   width: 950px;
   height: 450px;
   position: relative;
   margin-bottom: 100px;
 }
-.appetizer__img{
+.appetizer__main-img{
   width: 430px;
   height: 350px;
   position: absolute;
@@ -517,7 +537,7 @@ body{
   left: 0;
   z-index: 20;
 }
-.appetizer__list-item{
+.appetizer__list{
   width: 590px;
   height: 370px;
   background-color: #535145;
@@ -554,6 +574,7 @@ body{
 
 
 #bento{
+  max-width: 100%;
   width: 950px;
   margin: 0 auto;
 }
@@ -588,7 +609,7 @@ body{
   padding: 12px 0;
   font-family: "Noto Sans JP", sans-serif;
 }
-.bento-price{
+.bento__price{
   font-weight: bold;
   font-size: 20px;
   padding: 10px 0;
@@ -600,6 +621,7 @@ body{
   color: #ffffff;
   padding: 50px 0;
   position: relative;
+  max-width: 100%;
 }
 .bento-other__inner:before {
   position: absolute;
@@ -612,16 +634,6 @@ body{
   z-index: -1;
 }
 
-.bento-other:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  right: -5000px;
-  width: 5000px;
-  z-index: -1;
-  background: #535145;
-}
 .bento-other__list{
   display: flex;
   justify-content: space-between;
@@ -744,6 +756,7 @@ body{
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  border: none;
 }
 @media screen and (max-width: 800px) {
   .intro__list{
@@ -775,8 +788,17 @@ body{
   }
   .information__map{
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0;
   }
+
+
+  .footer__inner{
+    padding: 0 50px;
+  }
+  .footer__nav{
+    padding-right: 50px;
+  }
+
 
 
 
@@ -786,6 +808,8 @@ body{
   }
   .reserve__main {
     height: auto;
+    width: 100%;
+    max-width: 100%;
   }
   .reserve__main-img{
     display: block;
@@ -806,7 +830,75 @@ body{
     margin: auto;
     padding-top: 30px;
   }
+
+  .diner-other__inner{
+    width: 100%;
+    margin: auto;
+  }
+  .diner-other__inner:before {
+    margin: 0 auto;
+  }
+  .diner-other__list{
+    display: block;
+    margin: auto;
+  }
+  .diner-other__table{
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+
+    /*仕出しメニュー*/
+    .appetizer__main , .appetizer__main-img ,.appetizer__list{
+      position: static;
+    }
+    .appetizer__main {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+    .appetizer__main-img{
+      display: block;
+      margin: 0 auto;
+    }
+    .appetizer__list{
+      margin: 0 auto;
+    }
   
+  
+    .bento__list{
+      display: block;
+      text-align: center;
+    }
+    .bento__list-item{
+      width: 304px;
+      max-width: 100%;
+      margin: auto;
+      padding-top: 30px;
+    }
+  
+    .bento-other__inner{
+      width: 100%;
+      max-width: 100%;
+      margin: auto;
+    }
+    .bento-other__inner:before {
+      margin: 0 auto;
+    }
+    .bento-other__list{
+      display: block;
+      margin: auto;
+    }
+    .bento-other__table{
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .bento-other__button{
+      display: block;
+      padding: 100px 0;
+    }
+    
 
 
 
@@ -819,7 +911,9 @@ body{
     padding-right: 14px;
     padding-top: 16px;
     padding-bottom: 16px;
-    flex-wrap: wrap;
+    display: block;
+    max-width: 410px;
+    margin: auto;
   }
   .form__item-label {
     max-width: inherit;

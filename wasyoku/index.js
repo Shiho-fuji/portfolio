@@ -115,4 +115,13 @@ $(function() {
     // 戻り値としてエラーがあるかどうかを返す
     return result;
   }
+
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".container").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) {
+      $(".header").addClass("change-color");
+    } else {
+      $(".header").removeClass("change-color");
+    }
+  });
 });
