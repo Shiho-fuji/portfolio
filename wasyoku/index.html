@@ -8,13 +8,16 @@
     <title>和食屋</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   </head>
 
   <body>
 
     <header class="header">
       <div class="header__inner">
-        <div></div>
+        <div>
+          <a href="index.html" class="header__nav-logo fadein"><img src="img/logo.png" alt="和食屋のロゴです。" class="header__nav-logo-img">和食屋</a>
+        </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="inside.html" class="container__list-text">店内メニュー</a></li>
@@ -22,6 +25,27 @@
             <li class="common-button common-button--medium">
               <a href="contact.html" class="common-button__text"><img src="img/mail.png" alt="メールのマーク" class="mail__img">お問い合わせ</a>
             </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav__area">
+        <div class="nav__area-inner">
+          <div  class="nav__area-logo">
+            <a href="index.html" class="header__nav-logo fadein"><img src="img/logo.png" alt="和食屋のロゴです。" class="nav__area-logo-img">和食屋</a>
+          </div>
+          <button class="hamburger-menu" id="js-hamburger-menu">
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+          </button>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><p class="navigation__link-text">メニュー</p></li>
+            <li class="navigation__list-item"><a href="inside.html" class="navigation__link">店内メニュー</a></li>
+            <li class="navigation__list-item"><a href="catered.html" class="navigation__link">仕出し</a></li>
+            <li class="navigation__list-item common-button common-button--medium"><a href="contact.html" class="navigation__link  common-button__text"><img src="img/mail.png" alt="メールのマーク" class="mail__img">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
